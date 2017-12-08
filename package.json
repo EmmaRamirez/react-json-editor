@@ -14,12 +14,10 @@
   "keywords": [],
   "author": "Emma Ramirez <ramirez.emma.g@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": "^15",
-    "react-dom": "^15.6.2",
+    "react-dom": "^15.6.2"
   },
   "devDependencies": {
     "@types/chai": "^4.0.8",
