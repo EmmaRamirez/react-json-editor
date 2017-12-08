@@ -1,5 +1,8 @@
 .*
 **/tsconfig.json
-**/webpack.config.json
+**/webpack.config.js
 node_modules
 src
+jest-config.json
+tslint.json
+coverage
