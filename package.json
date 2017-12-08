@@ -1,11 +1,15 @@
 {
   "name": "@emmaramirez/react-json-editor",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest --config jest-config.json",
-    "build": "webpack"
+    "build": "webpack",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "url": "https://github.com/EmmaRamirez/react-json-editor"
   },
   "keywords": [],
   "author": "Emma Ramirez <ramirez.emma.g@gmail.com>",
@@ -35,6 +39,13 @@
     "webpack": "^3.10.0"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0",
+    "semantic-release": "^8.2.0",
     "uglifyjs-webpack-plugin": "^1.1.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
