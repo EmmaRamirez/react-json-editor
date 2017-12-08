@@ -14,9 +14,8 @@
   "keywords": [],
   "author": "Emma Ramirez <ramirez.emma.g@gmail.com>",
   "license": "MIT",
-  "dependencies": {},
-  "peerDependencies": {
-    "react": "^15",
+  "dependencies": {
+    "react": "^15.6.2",
     "react-dom": "^15.6.2"
   },
   "devDependencies": {
