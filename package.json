@@ -1,6 +1,6 @@
 {
   "name": "@emmaramirez/react-json-editor",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "a JSON block editor as a React component",
   "main": "dist/index.js",
   "scripts": {
