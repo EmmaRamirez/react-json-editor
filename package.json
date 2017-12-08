@@ -1,0 +1,40 @@
+{
+  "name": "@emmaramirez/react-json-editor",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest --config jest-config.json",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "Emma Ramirez <ramirez.emma.g@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/chai": "^4.0.8",
+    "@types/enzyme": "^3.1.5",
+    "@types/jasmine": "^2.8.2",
+    "@types/react": "^15.6.7",
+    "@types/react-dom": "^15.5.6",
+    "awesome-typescript-loader": "^3.4.1",
+    "chai": "^4.1.2",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-15": "^1.0.5",
+    "jasmine": "^2.8.0",
+    "jest": "^21.2.1",
+    "jest-enzyme": "^4.0.1",
+    "react": "^15",
+    "react-dom": "^15.6.2",
+    "react-test-renderer": "^15.6.2",
+    "replace-in-file": "^3.0.0",
+    "shelljs": "^0.7.8",
+    "ts-jest": "^21.2.4",
+    "tslint": "^5.8.0",
+    "typedoc": "^0.9.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^1.1.2"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "declaration": true,
+      "outDir": "./dist",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "strictNullChecks": true,
+      "noLib": false,
+      "jsx": "react",
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": false,
+      "allowJs": false,
+      "lib": [
+        "dom",
+        "es2017",
+      ],
+      "typeRoots": [
+        "./node_modules/@types"
+      ],
+      "baseUrl": "./src"
+    },
+    "exclude": [
+      "node_modules",
+      "./node_modules/@types"
+    ],
+    "compileOnSave": false
+}
