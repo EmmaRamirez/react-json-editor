@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import { Attribute } from 'components/Attribute';
+
 export interface JsonEditorProps {
     style: React.CSSProperties;
 }
