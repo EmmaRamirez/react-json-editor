@@ -7,3 +7,9 @@
 ```
 npm i @emmaramirez/react-json-editor
 ```
+
+## Usage
+
+```
+import { JsonEditor } from '@emmaramirez/react-json-editor'
+```

@@ -5,7 +5,6 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 module.exports = {
     entry: {
         'react-json-editor': path.resolve(__dirname, 'src/index.ts'),
-        'react-json-editor.min': path.resolve(__dirname, 'src/index.ts')
     },
     node: {
         fs: 'empty',
@@ -20,7 +19,7 @@ module.exports = {
     output: {
         library: 'react-json-editor',
         libraryTarget: 'umd',
-        filename: '[name].js',
+        filename: 'index.js',
         path: path.resolve(__dirname, 'dist'),
         umdNamedDefine: true
     },
