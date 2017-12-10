@@ -1,11 +1,16 @@
 import * as React from 'react';
+import { MouseEvent } from 'react';
 
 import { Attribute } from 'components/Attribute';
+import { Nullable } from 'utils';
 
 import './JsonEditor.scss';
 
+
 export interface JsonEditorProps {
     formatSpaces?: number;
+    onSave?: (json: Nullable<object>, e?: React.MouseEvent<HTMLElement>) => void;
+    saveText?: string;
     style?: object;
 }
 
@@ -35,10 +40,17 @@ export class JsonEditor extends React.PureComponent<JsonEditorProps, JsonEditorS
                 <div className='json-output'>
                     { this.formatJson(this.state.currentJson) }
                 </div>
-                <div className='json-blocks'>
-                    { this.formatJson(this.state.currentJson) }
-                    <div className='attribute add-json' onClick={ e => this.addAttribute() }>
-                        Add Attribute
+                <div className='json-blocks-wrapper'>
+                    <div className='json-blocks'>
+                        { this.formatJson(this.state.currentJson) }
+                        <div className='attribute add-json' onClick={ e => this.addAttribute() }>
+                            Add Attribute
+                        </div>
+                    </div>
+                    <div className='json-blocks-buttons'>
+                        <button className='json-blocks-buttons' onClick={ e => this.props.onSave(this.state.currentJson, e) }>
+                            { this.props.saveText || 'Save' }
+                        </button>
                     </div>
                 </div>
             </div>
