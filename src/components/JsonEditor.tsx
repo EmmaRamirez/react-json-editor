@@ -5,7 +5,8 @@ import { Attribute } from 'components/Attribute';
 import './JsonEditor.scss';
 
 export interface JsonEditorProps {
-    style: React.CSSProperties;
+    formatSpaces?: number;
+    style?: React.CSSProperties;
 }
 
 export interface JsonEditorState {
@@ -18,13 +19,11 @@ export class JsonEditor extends React.PureComponent<JsonEditorProps, JsonEditorS
     }
 
     addAttribute() {
-        this.setState({
-            currentJson: 
-        });
+        
     }
 
     private formatJson(json:JsonEditorState['currentJson']) {
-        return JSON.stringify(json, null, 2);
+        return JSON.stringify(json, null, this.props.formatSpaces || 2);
     }
 
     public render() {
