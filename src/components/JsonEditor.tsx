@@ -16,6 +16,9 @@ export interface JsonEditorState {
 export class JsonEditor extends React.PureComponent<JsonEditorProps, JsonEditorState> {
     constructor(props:JsonEditorProps) {
         super(props);
+        this.state = {
+            currentJson: {}
+        };
     }
 
     addAttribute() {
