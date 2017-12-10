@@ -6,7 +6,7 @@ import './JsonEditor.scss';
 
 export interface JsonEditorProps {
     formatSpaces?: number;
-    style?: React.CSSProperties;
+    style?: object;
 }
 
 export interface JsonEditorState {
@@ -31,7 +31,7 @@ export class JsonEditor extends React.PureComponent<JsonEditorProps, JsonEditorS
 
     public render() {
         return (
-            <div className='react-json-editor'>
+            <div className='react-json-editor' style={ this.props.style || {} }>
                 <div className='json-output'>
                     { this.formatJson(this.state.currentJson) }
                 </div>
