@@ -1,4 +1,12 @@
-.attribute {
+.rjs-attribute {
     background: #222;
     color: #eee;
+}
+
+.rjs-key-token {
+    color: tomato;
+}
+
+.rjs-boolean-attribute .rjs-value-token {
+    color: seagreen;
 }

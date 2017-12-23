@@ -1,6 +1,6 @@
 .*
 **/tsconfig.json
-**/webpack.config.js
+webpack.config.js
 node_modules
 src
 jest-config.json
